@@ -1,0 +1,320 @@
+HW 4 - Quiz Questions
+
+Javascript
+1. What does console.log() do?
+a. 'console.log()' ("logs") writes a window prompt.
+b. 'console.log()' ("logs") creates a global varaiable in the console.
+c. 'console.log()' ("logs") writes/prints a message to the console.
+d. 'console.log()' ("logs") creates a local varaiable in the console.
+
+A is console.info()
+C1
+src: "https://www.w3schools.com/jsref/met_console_log.asp"
+
+2. How do you access the "console" on a web browser?
+a. 'Right click' --> 'Inspect' --> 'Console' 
+b. 'Right click' --> 'View Page Source' --> 'Sources' --> 'Console'
+c. 'Right click' --> 'View Page Source' --> 'Console'
+d. 'Right click' --> 'Sources' --> 'Console'
+
+A1
+
+
+3. Which of the options below properly links a Javascript file to HTML?
+a. <link href="scripts.js></script>
+b. <link rel="javascript" href="scripts.js"></script>
+c. <script href="scripts.js"></script>
+d. <script src="scripts.js"></script>
+
+D1
+
+4. What file extension is used for Javascript files?
+a. " .jv "
+b. " .js "
+c. " .jsc "
+d. " .jscr "
+
+B1
+
+5. What is the simplest way to declare a variable in Javascript?
+a. let
+b. const 
+c. var 
+d. int
+
+C2
+src: "https://www.w3schools.com/js/js_variables.asp"
+
+6. Choose the best answer. What is "var" in Javascript?
+a. A fixed global container of value
+b. A container for a value, like a number or a string.
+c. A container for numbers, like 5 or "five"
+d. A container for value of a local object 
+
+B2
+
+7. What is a function in Javascript?
+a. A Javascript function is a block of code used to assign values to an object.
+b. A Javascript function is a block of code used to print information to the console.
+c. A JavaScript function is a block of code designed to perform a particular task.
+d. A Javascript function is a block of code used to assign elements to an object.
+
+C3
+src: "https://www.w3schools.com/js/js_functions.asp"
+
+8. What is an Object in Javascript?
+a. An 'Object' in Javascript is a single part of a larger group 
+b. An 'Object' in Javascript is a variable that contain multiple values. 
+c. An 'Object' in Javascript is a thing, like a car, or boat.
+d. An 'Object' in Javascript is is the value associated with a variable
+
+B3
+src: "https://www.w3schools.com/js/js_objects.asp"
+
+9. What is an element in Javascript?
+a. An Element in Javascript is a single part of a larger group
+b. An Element in Javascript is a variable that contain multiple values. 
+c. An Element in Javascript is a thing, like a car, or boat.
+d. An Element in Javascript is the value associated with a variable
+
+A2
+src: "https://www.w3schools.com/js/js_htmldom_elements.asp"
+
+10. What is a property in Javascript?
+a. A 'Property' in Javascript is a single part of a larger group
+b. A 'Property' in Javascript is a variable that contain multiple values. 
+c. A 'Property' in Javascript is a thing, like a car, or boat.
+d. A 'Property' in Javascript is a the value associated with a variable
+
+D2
+src: "https://www.w3schools.com/js/js_object_properties.asp"
+
+11. What is a 'Primitive' in Javascript?
+a. In Javascript, a 'Primitive' is an object that has a value of nothing.  
+b. In Javascript, a 'Primitive' is numeric data in a variable that is part of a function. 
+c. In Javascript, a 'Primitive' is a function that is not yet complete.
+d. In Javascript, a 'Primitive' is data that is not an object and has no methods. 
+
+D3
+src: Activity 3.5 in class. "course-content\03-javascript\activities\05-Ins_Primitive-Types\script.js"
+
+12. In the following code, which is the Object?
+var Student = {
+	firstName: "John"
+	lastName: "Doe"
+	age: 50
+	zodiac: Sagittarius
+}
+a. age
+b. Sagittarius
+c. Student
+d. var
+
+C4
+
+13. In the following code, which is the Element?
+var Student = {
+	firstName: "John"
+	lastName: "Doe"
+	age: 50
+	zodiac: Sagittarius
+}
+a. age
+b. Sagittarius
+c. Student
+d. var
+
+A3
+
+14. In the following code, which is the Property?
+var Student = {
+	firstName: "John"
+	lastName: "Doe"
+	age: 50
+	zodiac: Sagittarius
+}
+a. age
+b. Sagittarius
+c. Student
+d. var
+
+B4
+
+15. What is an Arithematic Operator in Javascript?
+a. Arithematic operators combine with numbers to form an expression that returns a single number
+b. Arithematic operators
+c. Arithematic operators combine with strings, booleans and numbers to form an expression that evaluates to true or false
+d. operators take in two or more expressions and return true or false 
+
+A4
+src: "https://www.w3schools.com/js/js_operators.asp"
+
+16. What is a Comparison Opoerator in Javascript?
+a. Comparison operators combine with numbers to form an expression that returns a single number
+b. Comparison operators
+c. Comparison operators combine with strings, booleans and numbers to form an expression that evaluates to true or false
+d. Comparison operators take in two or more expressions and return true or false 
+
+C5
+src: "https://www.w3schools.com/js/js_operators.asp"
+
+17. What is a Logical Operator in Javascript?
+a. Logical operators combine with numbers to form an expression that returns a single number
+b. Logical operators take in two or more numbers to form a true or false.  
+c. Logical operators combine with strings, booleans and numbers to form an expression that evaluates to true or false
+d. Logical operators take in two or more expressions and return true or false. 
+
+D4
+src: "https://www.w3schools.com/js/js_operators.asp"
+
+18. 
+a.
+b.
+c.
+d.
+
+A5
+
+19. 
+a.
+b.
+c.
+d.
+
+D5
+
+20. 
+a.
+b.
+c.
+d.
+
+C6
+
+21. 
+a.
+b.
+c.
+d.
+
+B5
+
+22. 
+a.
+b.
+c.
+d.
+
+B6
+
+23. 
+a.
+b.
+c.
+d.
+
+A6
+
+24. 
+a.
+b.
+c.
+d.
+
+D6
+
+25. 
+a.
+b.
+c.
+d.
+
+A7
+
+26. 
+a.
+b.
+c.
+d.
+
+C7
+
+27. 
+a.
+b.
+c.
+d.
+
+D7
+
+28. 
+a.
+b.
+c.
+d.
+
+C8
+
+29. 
+a.
+b.
+c.
+d.
+
+D8
+
+30. 
+a.
+b.
+c.
+d.
+
+B7
+
+31. 
+a.
+b.
+c.
+d.
+
+B8
+
+32. 
+a.
+b.
+c.
+d.
+
+C9
+
+33. 
+a.
+b.
+c.
+d.
+
+A8
+
+34. 
+a.
+b.
+c.
+d.
+
+D9
+
+35. 
+a.
+b.
+c.
+d.
+
+A9
+
+36. 
+a.
+b.
+c.
+d.
+
+B9
