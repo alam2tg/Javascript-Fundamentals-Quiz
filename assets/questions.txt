@@ -167,27 +167,31 @@ d. Logical operators take in two or more expressions and return true or false.
 D4
 src: "https://www.w3schools.com/js/js_operators.asp"
 
-18. 
-a.
-b.
-c.
-d.
+18. The 'typeof' operator returns a string indicating the 'type' of a datatype's value. 
+What does the following code return?
+	console.log(typeof 42);
+a. number
+b. object
+c. symbol
+d. object
 
 A5
 
-19. 
-a.
-b.
-c.
-d.
+19. The 'typeof' operator returns a string indicating the 'type' of a datatype's value. 
+What does the following code return?
+	console.log(typeof true);
+a.number
+b. object
+c. symbol
+d. object
 
 D5
 
-20. 
-a.
-b.
-c.
-d.
+20. What is a callback?
+a. A variable. 
+b. A datatype.
+c. A function. 
+d. A string. 
 
 C6
 
