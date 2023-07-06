@@ -10,24 +10,25 @@
 
 <body>
     <header>
-        <h1 id="Javascript-Title" class="">Javascript Fundamentals Quiz</h1>
-                    <!--Create Start button on Header, Visible on Page Load, Hidden on Quiz Start-->
-        <button type="button" class="start-button" id="start-button">Press Here to Start</button>
-                    <!--Create timer as header-->
-        <h2 id="timer-count" class="timer-count" style="text-align:right;"></h2>
+        <section id="property-hide" class="property-hide">
+            <h1 id="Javascript-Title" class="">Javascript Fundamentals Quiz</h1>
+                        <!--Create Start button on Header, Visible on Page Load, Hidden on Quiz Start-->
+            <button type="button" class="start-button" id="start-button">Press Here to Start</button>
+                        <!--Create timer as header-->
+            <h2 id="timer-count" class="timer-count" style="text-align:right;"></h2>
+        </section>
     </header>
-
 
     <!--WHEN I click the start button, THEN a timer starts and I am presented with a question-->
             <!--Intro page has a button-->
             <!--When I click the start button, some elements disappear, some elements appear-->
             <!--High Scores, Input fields to enter name, Container for Summary Elements-->
     <main>
-        <div id="container" class="container">
-            <h3 id="Questions" class="questions"></31>
-                <h4 id="answers-list" class="answers-list">
-                    <p id="answer-correct" class="answer-correct"></p>
-                    <p id="answer-incorrect" class="answer-incorrect"></p>
+        <div id="property-show" class="container"></div>
+            <h3 id="questions" class="questions"></31>
+            <h4 id="answers-list" class="answers-list">
+                <p id="answer-correct" class="answer-correct"></p>
+                <p id="answer-incorrect" class="answer-incorrect"></p>
                 </h4>
             </h3>
         </div>
@@ -60,3 +61,16 @@
 <!-- -->
 
 <!-- -->
+
+<p id="elementToHide">This element will be hidden when the window is loaded.</p>
+
+<script>
+  // Function to hide the element
+  function hideElement() {
+    var elementToHide = document.getElementById("elementToHide");
+    elementToHide.style.display = "none";
+  }
+
+  // Event listener for window load
+  window.onload = hideElement;
+</script>

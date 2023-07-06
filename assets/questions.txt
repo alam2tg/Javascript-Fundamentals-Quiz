@@ -21,18 +21,18 @@ A1
 
 
 3. Which of the options below properly links a Javascript file to HTML?
-a. <link href="scripts.js></script>
-b. <link rel="javascript" href="scripts.js"></script>
-c. <script href="scripts.js"></script>
-d. <script src="scripts.js"></script>
+a. <link href='scripts.js'></script>
+b. <link rel='javascript' href='scripts.js'></script>
+c. <script href='scripts.js'></script>
+d. <script src='scripts.js'></script>
 
 D1
 
 4. What file extension is used for Javascript files?
-a. " .jv "
-b. " .js "
-c. " .jsc "
-d. " .jscr "
+a. ' .jv '
+b. ' .js '
+c. ' .jsc '
+d. ' .jscr '
 
 B1
 
@@ -45,10 +45,10 @@ d. int
 C2
 src: "https://www.w3schools.com/js/js_variables.asp"
 
-6. Choose the best answer. What is "var" in Javascript?
+6. Choose the best answer. What is 'var' in Javascript?
 a. A fixed global container of value
 b. A container for a value, like a number or a string.
-c. A container for numbers, like 5 or "five"
+c. A container for numbers, like 5 or 'five'
 d. A container for value of a local object 
 
 B2
@@ -91,7 +91,7 @@ src: "https://www.w3schools.com/js/js_object_properties.asp"
 
 11. What is a 'Primitive' in Javascript?
 a. In Javascript, a 'Primitive' is an object that has a value of nothing.  
-b. In Javascript, a 'Primitive' is numeric data in a variable that is part of a function. 
+a. In Javascript, a 'Primitive' is an object that has a value of nothing.
 c. In Javascript, a 'Primitive' is a function that is not yet complete.
 d. In Javascript, a 'Primitive' is data that is not an object and has no methods. 
 
@@ -99,11 +99,11 @@ D3
 src: Activity 3.5 in class. "course-content\03-javascript\activities\05-Ins_Primitive-Types\script.js"
 
 12. In the following code, which is the Object?
-var Student = {
-	firstName: "John"
-	lastName: "Doe"
-	age: 50
-	zodiac: Sagittarius
+'var Student = {
+	'firstName: "John"
+	'lastName: "Doe"
+	'age: 50
+	'zodiac: Sagittarius
 }
 a. age
 b. Sagittarius
@@ -114,8 +114,8 @@ C4
 
 13. In the following code, which is the Element?
 var Student = {
-	firstName: "John"
-	lastName: "Doe"
+	firstName: 'John'
+	lastName: 'Doe'
 	age: 50
 	zodiac: Sagittarius
 }
@@ -128,8 +128,8 @@ A3
 
 14. In the following code, which is the Property?
 var Student = {
-	firstName: "John"
-	lastName: "Doe"
+	firstName: 'John'
+	lastName: 'Doe'
 	age: 50
 	zodiac: Sagittarius
 }
@@ -180,7 +180,7 @@ A5
 19. The 'typeof' operator returns a string indicating the 'type' of a datatype's value. 
 What does the following code return?
 	console.log(typeof true);
-a.number
+a. number
 b. object
 c. symbol
 d. object
