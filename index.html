@@ -4,33 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/reset.css">
-    <link rel="stylesheet" href="assets/style.css"
-    <title>Document</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Javascript Fundamentals Quiz</title>
 </head>
+
 <body>
     <header>
-        <!--Create Start button on Header? -->
-        <!--Visible on Page Load-->
-        <!--Hidden on Page Load like the 
-                timer-->
-        <!--Create clock as header-->
-        <!--Add score to header-->
-
+        <h1 id="Javascript-Title" class="">Javascript Fundamentals Quiz</h1>
+                    <!--Create Start button on Header, Visible on Page Load, Hidden on Quiz Start-->
+        <button type="button" class="start-button" id="start-button">Press Here to Start</button>
+                    <!--Create timer as header-->
+        <h2 id="timer-count" class="timer-count" style="text-align:right;"></h2>
     </header>
 
 
-    <main>Button and Questions</main>
     <!--WHEN I click the start button, THEN a timer starts and I am presented with a question-->
-        <!--Intro page has a button-->
-        <!--When I click the start button, some elements disappear, some elements appear-->
-        <!--High Scores, Input fields to enter name, Container for Summary Elements-->
-        <button type="button">Press Here to Start</button>
-
+            <!--Intro page has a button-->
+            <!--When I click the start button, some elements disappear, some elements appear-->
+            <!--High Scores, Input fields to enter name, Container for Summary Elements-->
+    <main>
+        <div id="container" class="container">
+            <h3 id="Questions" class="questions"></31>
+                <h4 id="answers-list" class="answers-list">
+                    <p id="answer-correct" class="answer-correct"></p>
+                    <p id="answer-incorrect" class="answer-incorrect"></p>
+                </h4>
+            </h3>
+        </div>
     <!--WHEN I answer a question, THEN I am presented with another question-->
         <!--List of Questions-->
         <!--Questions have a,b,c,d options-->
-        <!--When I have questions, they don't at Page Load
-            Hide questions until quiz begins-->
+        <!--When I have questions, they don't show at Page Load-->
 
     <!--WHEN I answer a question incorrectly, THEN time is subtracted from the clock-->
         <!--  --> 
@@ -44,7 +48,7 @@
         <!--Website portrays final score-->
         <!--Website portrays list of highscores from other contestants-->
         <!-- Display Summary / All Hidden Summary Elements -->
-
+    </main>
     
 
     <script src="assets/script.js"></script>
