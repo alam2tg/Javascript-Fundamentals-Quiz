@@ -1,5 +1,15 @@
-/*Intro Screen Includes Designed Header*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #a4b6d3;
+}
 
+
+/*Intro Screen Includes Designed Header*/
 
 /*Intro Screen has rectangular button with rounded edges*/
 

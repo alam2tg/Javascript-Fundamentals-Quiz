@@ -77,7 +77,7 @@ b. An Element in Javascript is a variable that contain multiple values.
 c. An Element in Javascript is a thing, like a car, or boat.
 d. An Element in Javascript is the value associated with a variable
 
-A2
+A21
 src: "https://www.w3schools.com/js/js_htmldom_elements.asp"
 
 10. What is a property in Javascript?
@@ -195,130 +195,132 @@ d. A string.
 
 C6
 
-21. 
-a.
-b.
-c.
-d.
+var questionsList = [
+        "1. What does 'console.log'() do?", 
+        "2. How do you access the 'console' on a web browser?",
+        "3. Which of the options below properly links a Javascript file to HTML?",
+        "4. What file extension is used for Javascript files?",
+        "5. What is the simplest way to declare a variable in Javascript?", 
+        "6. Choose the best answerList. What is 'var' in Javascript?",
+        "7. What is a function in Javascript?",
+        "8. What is an Object in Javascript?",
+        "9. What is an element in Javascript?", 
+        "10. What is a property in Javascript?", 
+        "11. What is a 'Primitive' in Javascript?", 
+        "12. In the following code, which is the Object?\n var Student = {\n, firstName: 'John'\n lastName: 'Doe',\n age: 50,\n zodia Sagittarius",
+        "13. In the following code, which is the Element?\n var Student = \n firstName: 'John',\n lastName: 'Doe',\n age: 50,\n zodia Sagittarius",
+        "14. In the following code, which is the Property?\n var Student = \n firstName: 'John,'\n lastName: 'Doe',\n age: 50,\n zodia Sagittarius",
+        "15. What is an Arithematic Operator in Javascript?",
+        "16. What is a Comparison Opoerator in Javascript?",
+        "17. What is a Logical Operator in Javascript?",
+        "18. The typeof operator returns a string indicating the type of a datatypes value. What does the following code return?\n console.log(typeof 42)",
+        "19. The 'typeof' operator returns a string indicating the type of a datatypes value.\n What does the following code return?\n, 'console.log'(typeof true) ", 
+        "20. What is a callback?"
+]
 
-B5
+redundant code
 
-22. 
-a.
-b.
-c.
-d.
+var correctAnswers = [2,0,3,1,2,1,2,1,0,3,3,2,0,1,0,2,3,0,3,2]
+var answerList = [{
+         "a. console.log() (logs) writes a window prompt.\n",
+         "b. console.log() (logs) creates a global varaiable in the console.\n",
+         "c. console.log() (logs) writes/prints a message to the console.\n",
+         "d. console.log() (logs) creates a local varaiable in the console."
+    },{
+         "a. Right click --> Inspect --> Console \n",
+         "b. Right click --> View Page Source --> Sources --> Console\n",
+         "c. Right click --> View Page Source --> Console \n", 
+         "d. Right click --> Sources --> Console "
+    },{
+         "a. <link href=scripts.js></script>. \n", 
+         "b. <link rel=javascript href=scripts.js></script> \n", 
+         "c. <script href=scripts.js></script> \n", 
+         "d. <script src=scripts.js></script> ",
+    },{  
 
-B6
-
-23. 
-a.
-b.
-c.
-d.
-
-A6
-
-24. 
-a.
-b.
-c.
-d.
-
-D6
-
-25. 
-a.
-b.
-c.
-d.
-
-A7
-
-26. 
-a.
-b.
-c.
-d.
-
-C7
-
-27. 
-a.
-b.
-c.
-d.
-
-D7
-
-28. 
-a.
-b.
-c.
-d.
-
-C8
-
-29. 
-a.
-b.
-c.
-d.
-
-D8
-
-30. 
-a.
-b.
-c.
-d.
-
-B7
-
-31. 
-a.
-b.
-c.
-d.
-
-B8
-
-32. 
-a.
-b.
-c.
-d.
-
-C9
-
-33. 
-a.
-b.
-c.
-d.
-
-A8
-
-34. 
-a.
-b.
-c.
-d.
-
-D9
-
-35. 
-a.
-b.
-c.
-d.
-
-A9
-
-36. 
-a.
-b.
-c.
-d.
-
-B9
+         "a. <link href=scripts.js></script> \n", 
+         "b. <link rel=javascript href=scripts.js></script> \n",
+         "c. <script href=scripts.js></script> \n", 
+         "d. <script src=scripts.js></script>", 
+    },{  
+         "a.  .jv  \n", 
+         "b.  .js  \n", 
+         "c.  .jsc  \n",
+         "d.  .jscr  ", 
+    },{  
+         "a. let \n", 
+         "b. const  \n",
+         "c. var  \n", 
+         "d. int ", 
+    },{ 
+         "a. A fixed global container of value \n", 
+         "b. A container for a value, like a number or a string. \n", 
+         "A container for numbers, like 5 or five\n",
+         "d. A container for value of a local object", 
+    },{  
+         "a. A Javascript function is a block of code used to assign values to an object. \n",
+         "b. A Javascript function is a block of code used to print information to the console.\n",
+         "c. A JavaScript function is a block of code designed to perform a particular task. \n", 
+         "d. A Javascript function is a block of code used to assign elements to an object.", 
+    },{ 
+         "a. An Object in Javascript is a single part of a larger group  \n", 
+         "b. An Object in Javascript is a variable that contain multiple values.  \n", 
+         "c. An Object in Javascript is a thing, like a car, or boat. \n", 
+         "d. An Object in Javascript is is the value associated with a variable ",
+    },{
+         "a. An Element in Javascript is a single part of a larger group \n", 
+         "b. An Element in Javascript is a variable that contain multiple values.\n", 
+         "c. An Element in Javascript is a thing, like a car, or boat.\n", 
+         "d. An Element in Javascript is the value associated with a variable ",
+    },{ 
+         "a. A Property in Javascript is a single part of a larger group\n", 
+         "b. A Property in Javascript is a variable that contain multiple values.  \n", 
+         "c. A Property in Javascript is a thing, like a car, or boat. \n", 
+         "d. A Property in Javascript is a the value associated with a variable ", 
+    },{ 
+         "a. In Javascript, a Primitive is an object that has a value of nothing.\n", 
+         "b. In Javascript, a Primitive is numeric data in a variable that is part of a. \n", 
+         "c. In Javascript, a Primitive is a function that is not yet complete. \n", 
+         "d. In Javascript, a Primitive is data that is not an object and has no methods.", 
+    },{
+         "a. age\n", 
+         "b. Sagittarius\n", 
+         "c. Student\n",
+         "d. var", 
+    },{
+         "a. age\n",
+         "b. Sagittarius\n", 
+         "c. Student\n", 
+         "d. var", 
+    },{
+         "a. age\n", 
+         "b. Sagittarius\n",
+         "c. Student\n", 
+         "d. var", 
+    },{
+         "a. Arithematic operators combine with numbers to form an expression that returns a single number\n",
+         "b. Arithematic operators combine two elements in an object\n", 
+         "c. Arithematic operators combine with strings, booleans and numbers to form an expression that evaluates to true or false\n", 
+         "d. operators take in two or more expressions and return true or false ", 
+    },{
+         "a. Comparison operators combine with numbers to form an expression that returns a single number\n", 
+        "b. Comparison operators compare two items to see if they are the same or true.\n", 
+         "c. Comparison operators combine with strings, booleans and numbers to form an expression that evaluates to true or false\n",
+         "d. Comparison operators take in two or more expressions and return true or false ", 
+    },{
+         "a. number\n", 
+         "b. object\n", 
+         "c. symbol\n", 
+         "d. object",
+    },{ 
+         "a. number\n", 
+         "b. object\n", 
+         "c. symbol\n", 
+         "d. object",
+    },{ 
+         "a. A variable.\n",
+         "b. A datatype.\n", 
+         "c. A function. \n",
+         "d. A string. ",
+    }
+]
