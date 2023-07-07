@@ -17,20 +17,16 @@
 
 <body>
     <header>
-        <section id="property-hide" class="property-hide">
-            <h1 id="Javascript-Title" class="">Javascript Fundamentals Quiz</h1>
-            <button type="button" class="start-button" id="start-button">Press Here to Start</button>
-            <h2 id="timer-count" class="timer-count" style="text-align:right;"></h2>
-        </section>
+        <h1 id="javascript-title" class="javascript-title">Javascript Fundamentals Quiz</h1>
+        <button type="button" class="start-button" id="start-button">Press Here to Start</button>
+        <h2 id="timer" class="timer" style="text-align:right;"></h2>
+        <h2 id="highscore" class="highscore" style="text-align:left;"></h2>
     </header>
 
     <main>
-        <section class="container-show" id="container-show">
-            <div id="" class="questions-container"></div>
-                <button class="answer" id="answer-a"></button>
-                <p id="answer-incorrect" class="answer-incorrect"></p>
-                </h4>
-            </h3>
+        <section class="quiz" id="quiz" style="display: none;">
+            <h2 id="questions-container" class="questions-container">
+            <div class="answer-container" id="answer-container"></div>
         </section>
     <!--WHEN I answer a question, THEN I am presented with another question-->
         <!--List of Questions-->

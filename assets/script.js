@@ -7,19 +7,20 @@
     //Question Number:
     //Score: How much time you have left
     //Store time in seconds, set as 300 seconds. var time-left
-    //array of answers"""Answer 1, Answer 2, Answer 3, Answer 4"" 
-//var startButton = document.querySelector("#start-Button");
-//var timerEl = document.getElementByID(#timer-count);
-//var winCounter = 0;
-//var loseCounter = 0;
-//var timeInterval;
-//var timeLeft;
-//var answerCorrect;
-//var answerIncorrect;
 
-var combinedQuestion = [
-    {
-        question: "1. What does 'console.log'() do?", 
+var startButton = document.querySelector("#start-Button");
+var headerTitle = document.querySelector("$javascript-title");
+var timerEl = document.getElementByID("#timer-count");
+var winCounter = 0;
+var loseCounter = 0;
+var questionCounter = 0;
+var timeInterval;
+var timeLeft;
+var answerCorrect;
+var answerIncorrect;
+
+var quizQuestions = [
+    {   question: "1. What does 'console.log'() do?", 
         answerList:[
             "a. console.log() (logs) writes a window prompt.\n",
             "b. console.log() (logs) creates a global varaiable in the console.\n",
@@ -48,7 +49,7 @@ var combinedQuestion = [
             "a.  .jv  \n", 
             "b.  .js  \n", 
             "c.  .jsc  \n",
-            "d.  .jscr  "]
+            "d.  .jscr  "],
         correctAnswer:1
     },{    
         question:"5. What is the simplest way to declare a variable in Javascript?",
@@ -57,8 +58,7 @@ var combinedQuestion = [
          "b.  .js  \n", 
          "c.  .jsc  \n",
          "d.  .jscr  ", 
-        ]
-
+        ],
         correctAnswer:2
     },{    
         question:"6. Choose the best answerList. What is 'var' in Javascript?",
@@ -187,35 +187,30 @@ var combinedQuestion = [
         correctAnswer:2
     }     
 ]
+//console.log(combinedQuestion[1]);
 
-console.log(combinedQuestion[1]);
-
-  // Function to hide the element
-  function hideElement() {
-    var elementToHide = document.getElementById("elementToHide");
+// Function to hide the element - hide title, hide start button,
+function hideElements() {
+    combinedQuestion = document.getElementById("#questions-container");
     elementToHide.style.display = "none";
   }
+
+
 
   // Event listener for window load
 window.onload = hideElement;
 
-
-
-function hideElements() {
-    document.getElementById("questions").hidden = true;
-    document.getElementById("answers-list").hidden = true;
-    document.getElementById("timer-count").hidden = true;
-}
-window.onload = hideElements
-
-function showElements() {
-
-}
-
 /*WHEN I click the start button
 THEN a timer starts and I am presented with a question*/
+$(document).ready(function(){
+    questionCounter = 0; //track question number
+    var answerSelected = []; //Array containing answers
+    var questionsContainer =$("#questions-container")
 
-function startGame() {
+    displayNext();
+
+
+function startQuiz() {  //display questions, 
     timeLeft = 300; 
     question = document.getElementById("start-button");
         for (i=0; i < question.length; i++){
@@ -227,28 +222,21 @@ function startGame() {
             var answers = answersArray"i";
             question.hidden = !question.hidden;
         }
-}
-function hideElements() {
-    
-
-}
+    }
 
 var start = document.getElementByID("start-button");
-start.addEventListener("click", startGame)
-start.addEventLister("click",hideElements)
 
-function startGameHide() {
 
-}
+// Welcome text disappears
 
-var start = 
-    // Welcome text disappears
-    // First question appears
-            //Answers for first question appears
-    // Timer starts 
-    //set interval --
-    // decrement the time left variable
-    // check when interval = 0
+// First question appears
+displayMessage();
+    //Answers for first question appears
+
+// Timer starts 
+//set interval --
+// decrement the time left variable
+// check when interval = 0
 function startTimer() {
 timeInterval = setInterval(function(){
     if (timeLeft > 0) {
@@ -265,6 +253,8 @@ timeInterval = setInterval(function(){
 
 
 function answerSelected() {
+    answerCorrect;
+    answerIncorrect;
     //triggered by an event listener on the options
     //correct or wrong event.target = compare with elements in correct answersArray
     //if correct - correct - 
@@ -314,11 +304,57 @@ function afterSubmit(){
 }
 
 
-//add eventListener for 
+
 
 //add eventListener for user triggering initials.
     //attach eventListner to var...
     //var submitInitials
 
+//add eventListener to start quizz
+document.addEventListener('DOMContentLoaded',function(){
+    var hideElements = document.getElementById("#start-button"); 
+    hideElements.addEventListener("click", function(){   
+        var elementsToHide = ["start-button", "javascript-title"]; 
+
+        elementsToHide.forEach(function(elementId){  
+            var hiddenEl = document.getElementById(elementId);
+            if(hiddenEl) {
+                element.style.display='none';
+            }
+        })
+    })
+})
+ //use "click" to initiate function --> hide elements in array 
+ //forEach iterates through array hiddenEl to execution hide function
+document.addEventListener('DOMContentLoaded',function(){
+    var showElements = document.getElementById("#start-button");
+    showELements.addEventListener("click", function(){
+        var elementsToShow = ["questions-container","timer","answer-container"];
+        
+        elementsToShow.forEach(function(elementID){
+            var displayEl = document.getElementById(elementID);
+            if(displayEl){
+                element.style.display='block';
+            }
+        })
+    })
+})
+ //use "click
+
+
+
+
+
+start = document.addEventListener("click", function(){
+
+}
+
+var startTimer = document.getElementById("start-button").addEventListener("click", startTimer)
+
 var answerCorrect = addEventListener(click, "answerList-correct");
 var answerIncorrect = addEventListener(click, "answerList-incorrect");
+var submitStart = addEventListener(click,"#start-button");
+var answerSelected = addEventListener(click,"#answer");
+
+//start.addEventListener("click", startGame)
+//start.addEventLister("click",hideElements)
