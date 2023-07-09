@@ -16,19 +16,35 @@
     <!--High Scores, Input fields to enter name, Container for Summary Elements-->
 
 <body>
-    <header>
-        <h1 id="javascript-title" class="javascript-title">Javascript Fundamentals Quiz</h1>
-        <button type="button" class="start-button" id="start-button">Press Here to Start</button>
-        <h2 id="timer" class="timer" style="text-align:right;"></h2>
-        <h2 id="highscore" class="highscore" style="text-align:left;"></h2>
+    <header id="header-box" class="header-container">
+          <h3 id="highscore" class="header-element" style="text-align:left;"> Highscore: </h3>
+          <h1 id="javascript-title" class="header-element">Javascript Fundamentals Quiz</h1>
+          <h3 id="timer" class="header-element" style="text-align:right;"> Timer: </h3>
     </header>
 
-    <main>
-        <section class="quiz" id="quiz" style="display: none;">
-            <h2 id="questions-container" class="questions-container">
-            <div class="answer-container" id="answer-container"></div>
-        </section>
-    <!--WHEN I answer a question, THEN I am presented with another question-->
+    <main id="main-container">
+          <section class="front-page" id="hello-welcome-container">
+               <h1 id="Welcome-message" class="front-page" style="text-align:center">Hello and welcome!</h1>
+               <p id="Rules-message" class="front-page" style="text-align:center">
+                    Please Read!<br><br>This quiz is meant to test your fundamental knowledge of Javascript. Each question will be multiple choice. You will have 5-minutes to complete the quiz. If you answer a question incorrectly, you will lose 10 seconds off the timer.<br><br> 
+                    When you're ready, press the Start Button!
+               </p>
+          </section>
+     
+          <div id="start-button">Press Here to Start</div> 
+          <section id="quiz" style="display: none;">
+               <h2 id="questions-container" class="questions-container">
+                    <div id="question">Question Test</p>
+               <div class="answer-container" id="answer-container">
+                    <div class="answer" id="a" onclick="checkAnswer('A')">A</p>
+                    <div class="answer" id="b" onclick="checkAnswer('B')">B</p>
+                    <div class="answer" id="c" onclick="checkAnswer('C')">C</p>     
+                    <div class="answer" id="d" onclick="checkAnswer('D')">D</p>
+               </div>
+               <div id="checkAnswer"></div>
+               <div id="scoreContainer" style="display: none;"></div>
+          </section>
+        <!--WHEN I answer a question, THEN I am presented with another question-->
         <!--List of Questions-->
         <!--Questions have a,b,c,d options-->
         <!--When I have questions, they don't show at Page Load-->
@@ -46,11 +62,13 @@
     </main>
     
 
-    <script src="assets/script.js"></script>
+    <script src="assets/script.js">
+        console.log(quizQuestions)
+    </script>
 </body>
 </html>
 <!-- -->
-<p id="elementToHide">This element will be hidden when the window is loaded.</p>
+
 
 <script></script>
 
