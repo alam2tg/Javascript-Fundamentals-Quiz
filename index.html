@@ -1,74 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/reset.css">
-    <link rel="stylesheet" href="assets/style.css">
-    <title>Javascript Fundamentals Quiz</title>
-</head>
 
-<!--Create Start button on Header, Visible on Page Load, Hidden on Quiz Start-->
-<!--Create timer as header-->
-<!--WHEN I click the start button, THEN a timer starts and I am presented with a question-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/reset.css">
+        <link rel="stylesheet" href="assets/style.css">
+        <title>Javascript Fundamentals Quiz</title>
+    </head>
+
+    <!--Create Start button on Header, Visible on Page Load, Hidden on Quiz Start-->
+    <!--Create timer as header-->
+    <!--WHEN I click the start button, THEN a timer starts and I am presented with a question-->
     <!--Intro page has a button-->
     <!--When I click the start button, some elements disappear, some elements appear-->
     <!--High Scores, Input fields to enter name, Container for Summary Elements-->
 
-<body>
-    <header id="header-box" class="header-container">
-          <h3 id="highscore" class="header-element" style="text-align:left;"> Highscore: </h3>
-          <h1 id="javascript-title" class="header-element">Javascript Fundamentals Quiz</h1>
-          <h3 id="timer" class="header-element" style="text-align:right;"> Timer: </h3>
-    </header>
-
-    <main id="main-container">
-          <section class="front-page" id="hello-welcome-container">
-               <h1 id="Welcome-message" class="front-page" style="text-align:center">Hello and welcome!</h1>
-               <p id="Rules-message" class="front-page" style="text-align:center">
-                    Please Read!<br><br>This quiz is meant to test your fundamental knowledge of Javascript. Each question will be multiple choice. You will have 5-minutes to complete the quiz. If you answer a question incorrectly, you will lose 10 seconds off the timer.<br><br> 
+    <body>
+        <header id="header-box" class="header-container">
+            <h3 id="highscore" class="header-element" style="text-align:left;"> Highscore: </h3>
+            <h1 id="javascript-title" class="header-element">Javascript Fundamentals Quiz</h1>
+            <h3 id="timer" class="header-element" style="text-align:right;"> Timer: </h3>
+        </header>
+    
+        <main id="main-container">
+            <section class="front-page" id="hello-welcome-container">
+                <h1 id="Welcome-message" class="front-page" style="text-align:center">Hello and welcome!</h1>
+                <p id="Rules-message" class="front-page" style="text-align:center">
+                    Please Read!<br><br>This quiz is meant to test your fundamental knowledge of Javascript. Each
+                    question will be multiple choice. You will have 5-minutes to complete the quiz. If you answer a
+                    question incorrectly, you will lose 10 seconds off the timer.<br><br>
                     When you're ready, press the Start Button!
-               </p>
-          </section>
-     
-          <div id="start-button">Press Here to Start</div> 
-          <section id="quiz" style="display: none;">
-               <h2 id="questions-container" class="questions-container">
-                    <div id="question">Question Test</p>
-               <div class="answer-container" id="answer-container">
-                    <div class="answer" id="a" onclick="checkAnswer('A')">A</p>
-                    <div class="answer" id="b" onclick="checkAnswer('B')">B</p>
-                    <div class="answer" id="c" onclick="checkAnswer('C')">C</p>     
-                    <div class="answer" id="d" onclick="checkAnswer('D')">D</p>
-               </div>
-               <div id="checkAnswer"></div>
-               <div id="scoreContainer" style="display: none;"></div>
-          </section>
-        <!--WHEN I answer a question, THEN I am presented with another question-->
-        <!--List of Questions-->
-        <!--Questions have a,b,c,d options-->
-        <!--When I have questions, they don't show at Page Load-->
-
-    <!--WHEN I answer a question incorrectly, THEN time is subtracted from the clock-->
-        <!--  --> 
+                </p>
+            </section>
+            <!--start button-->
+            <div id="start">Press Here to Start</div>
+            <section id="quiz" style="display: none;">
+                <div id="questions-list" class="questions-container">
+                    <div id="question">Question</div>
+                    <div id="answer-list" class="answer-container">
+                        <div class="answer" id="a" onclick="checkAnswer('A')">A</div>
+                        <div class="answer" id="b" onclick="checkAnswer('B')">B</div>
+                        <div class="answer" id="c" onclick="checkAnswer('C')">C</div>
+                        <div class="answer" id="d" onclick="checkAnswer('D')">D</div>
+                    </div>
+                    <div id="questionNumber"><div class="questionNum"></div></div>
+                </div>
+                <div id="checkAnswer"></div>
+                <div id="scoreContainer" style="display: none;"></div>
+            </section>
+        </main>
+        <script src="assets/script.js"></script>
+    </body>
     
-    <!--WHEN all questions are answered or the timer reaches 0, THEN the game is over-->
-        <!--Game Over!--> 
-
-    <!--WHEN the game is over, THEN I can save my initials and score-->
-        <!--Website portrays final score-->
-        <!--Website portrays list of highscores from other contestants-->
-        <!-- Display Summary / All Hidden Summary Elements -->
-    </main>
-    
-
-    <script src="assets/script.js">
-        console.log(quizQuestions)
-    </script>
-</body>
-</html>
+    </html>
 <!-- -->
 
 
-<script></script>
 
+<!--WHEN I answer a question, THEN I am presented with another question-->
+<!--List of Questions-->
+<!--Questions have a,b,c,d options-->
+<!--When I have questions, they don't show at Page Load-->
+
+<!--WHEN I answer a question incorrectly, THEN time is subtracted from the clock-->
+<!--  -->
+
+<!--WHEN all questions are answered or the timer reaches 0, THEN the game is over-->
+<!--Game Over!-->
+
+<!--WHEN the game is over, THEN I can save my initials and score-->
+<!--Website portrays final score-->
+<!--Website portrays list of highscores from other contestants-->
+<!-- Display Summary / All Hidden Summary Elements -->
