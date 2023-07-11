@@ -7,7 +7,6 @@ b. 'console.log()' ("logs") creates a global varaiable in the console.
 c. 'console.log()' ("logs") writes/prints a message to the console.
 d. 'console.log()' ("logs") creates a local varaiable in the console.
 
-A is console.info()
 C1
 src: "https://www.w3schools.com/jsref/met_console_log.asp"
 

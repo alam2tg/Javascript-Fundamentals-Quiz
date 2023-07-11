@@ -1,59 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="assets/reset.css">
-        <link rel="stylesheet" href="assets/style.css">
-        <title>Javascript Fundamentals Quiz</title>
-    </head>
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="assets/reset.css">
+     <link rel="stylesheet" href="assets/style.css">
+     <title>Javascript Fundamentals Quiz</title>
+</head>
 
-    <!--Create Start button on Header, Visible on Page Load, Hidden on Quiz Start-->
-    <!--Create timer as header-->
-    <!--WHEN I click the start button, THEN a timer starts and I am presented with a question-->
-    <!--Intro page has a button-->
-    <!--When I click the start button, some elements disappear, some elements appear-->
-    <!--High Scores, Input fields to enter name, Container for Summary Elements-->
+<!--Create Start button on Header, Visible on Page Load, Hidden on Quiz Start-->
+<!--Create timer as header-->
+<!--WHEN I click the start button, THEN a timer starts and I am presented with a question-->
+<!--Intro page has a button-->
+<!--When I click the start button, some elements disappear, some elements appear-->
+<!--High Scores, Input fields to enter name, Container for Summary Elements-->
 
-    <body>
-        <header id="header-box" class="header-container">
-            <h3 id="highscore" class="header-element" style="text-align:left;"> Highscore: </h3>
-            <h1 id="javascript-title" class="header-element">Javascript Fundamentals Quiz</h1>
-            <h3 id="timer" class="header-element" style="text-align:right;"> Timer: </h3>
-        </header>
-    
-        <main id="main-container">
-            <section class="front-page" id="hello-welcome-container">
-                <h1 id="Welcome-message" class="front-page" style="text-align:center">Hello and welcome!</h1>
-                <p id="Rules-message" class="front-page" style="text-align:center">
+<body>
+     <header id="header-box" class="header-container">
+          <h3 id="highscore" class="header-element" style="text-align:left;"> Highscore: </h3>
+          <h1 id="javascript-title" class="header-element">Javascript Fundamentals Quiz</h1>
+          <h3 id="timer" class="header-element" style="text-align:right;"> Timer: </h3>
+     </header>
+
+     <main id="main-container">
+          <section class="front-page" id="hello-welcome-container">
+               <h1 id="Welcome-message" class="front-page" style="text-align:center">Hello and welcome!</h1>
+               <p id="Rules-message" class="front-page" style="text-align:center">
                     Please Read!<br><br>This quiz is meant to test your fundamental knowledge of Javascript. Each
                     question will be multiple choice. You will have 5-minutes to complete the quiz. If you answer a
                     question incorrectly, you will lose 10 seconds off the timer.<br><br>
                     When you're ready, press the Start Button!
-                </p>
-            </section>
-            <!--start button-->
-            <div id="start">Press Here to Start</div>
-            <section id="quiz" style="display: none;">
-                <div id="questions-list" class="questions-container">
-                    <div id="question">Question</div>
+               </p>
+          </section>
+          <!--start button-->
+          <div id="start">Press Here to Start</div>
+
+          <section id="quiz" style="display: none;">
+               <div id="questions-list" class="questions-container">
+                    <!-- <div id="question">Question</div>
                     <div id="answer-list" class="answer-container">
                         <div class="answer" id="a" onclick="checkAnswer('A')">A</div>
                         <div class="answer" id="b" onclick="checkAnswer('B')">B</div>
                         <div class="answer" id="c" onclick="checkAnswer('C')">C</div>
                         <div class="answer" id="d" onclick="checkAnswer('D')">D</div>
                     </div>
-                    <div id="questionNumber"><div class="questionNum"></div></div>
-                </div>
-                <div id="checkAnswer"></div>
-                <div id="scoreContainer" style="display: none;"></div>
-            </section>
-        </main>
-        <script src="assets/script.js"></script>
-    </body>
-    
-    </html>
+                    <div id="questionNumber"><div class="questionNum"></div></div> -->
+
+                    <div id="questions" class="hide">
+                         <h2 id="question-title"></h2>
+                         <div id="choices" class="choices"></div>
+                    </div>
+                    
+                    <div id="feedback" class="feedback hide"></div>
+                    
+               </div>
+               <div id="checkAnswer"></div>
+               <div id="scoreContainer" style="display: none;"></div>
+          </section>
+     </main>
+     <script src="assets/script.js"></script>
+</body>
+
+</html>
 <!-- -->
 
 
